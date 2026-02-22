@@ -7,6 +7,7 @@
 
 Un'applicazione web per la consultazione del meteo, sviluppata in Vanilla JavaScript (ES6 Modules) per dimostrare competenze nella gestione del DOM, chiamate API asincrone e modularità del codice.
 
+🌐 **[Guarda la Demo Live qui] (https://app-meteo-3nb1jhu59-pigasilviasp-dots-projects.vercel.app)**
 
 ---
 
@@ -36,4 +37,4 @@ Un'applicazione web per la consultazione del meteo, sviluppata in Vanilla JavaSc
 Sviluppato da **Silvia Piga** come progetto di portfolio.
 
 * **LinkedIn:** www.linkedin.com/in/silvia-piga-81648037b
-* **GitHub:** @pigasilviasp-dot (https://github.com/pigasilviasp-dot)
+* **GitHub:** [@pigasilviasp-dot] (https://github.com/pigasilviasp-dot)
