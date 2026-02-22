@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="darkMode.js" defer></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer type="module"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 fs-1">Meteo <i class="bi bi-cloud-sun"></i></span>
+            <button class="btn btn-primary rounded-circle shadow-lg position-fixed bottom-0 end-0 m-4 d-flex align-items-center justify-content-center" 
+                id="darkModeBtn" 
+                style="width: 3rem; height: 3rem; z-index: 1050;">
+            <i class="bi bi-moon-stars-fill fs-4"></i>
+        </button>
+        <div class="d-flex align-items-center ms-3">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Cambio Unità">
+                <input type="radio" class="btn-check unit-switch" name="units" id="celsius" value="metric" checked>
+                <label class="btn btn-outline-primary" for="celsius">°C</label>
+
+                <input type="radio" class="btn-check unit-switch" name="units" id="fahrenheit" value="imperial">
+                <label class="btn btn-outline-primary" for="fahrenheit">°F</label>
+            </div>
+        </div>
+        <div class="dropdown ms-2">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <i class="bi bi-translate"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item lang-switch" href="#" data-lang="it">Italiano</a></li>
+                <li><a class="dropdown-item lang-switch" href="#" data-lang="en">English</a></li>
+                <li><a class="dropdown-item lang-switch" href="#" data-lang="es">Español</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="row g-3 my-4 align-items-center justify-content-center">
+            <div class="col-12 col-md-4 text-center">
+                <label for="city" class="form-label fs-4">Cerca il meteo della tua città!</label>
+            </div>
+            <div class="col-8 col-md-4">
+                <input type="text" class="form-control" id="city" placeholder="digita qui la città...">
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-start">
+                <button type="submit" id="submit"class="btn btn-primary ">Cerca</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div id="cardCityInput" class="col-12 col-md-4 d-none"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-start" id="defaultCard">
+        </div>
+    </div>
+
+</body>
+</html>
